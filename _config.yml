@@ -26,7 +26,7 @@ github_username:  shad0ff
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
 exclude:
