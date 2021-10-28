@@ -3,3 +3,17 @@ jQuery( $ => {
         MyListing.Explore.map.addListener( 'updated_markers', () => {
 					jQuery(".lf-head-btn:contains('ВІДЧИНЕНО')").addClass('open-status-border');
 					jQuery(".lf-head-btn:contains('ЗАЧИНЕНО')").addClass('closed-status-border');
+
+
+					$('.post-4900 .lf-background, .post-5029 .lf-background, .post-4631 .lf-background, .post-4563 .lf-background, .post-4556 .lf-background, .post-5053 .lf-background, .post-4234 .lf-background, .post-4154 .lf-background, .post-4025 .lf-background, .post-5540 .lf-background, .post-5232 .lf-background').css({WebkitFilter: 'grayscale(1) blur(5px)'}); // Зачинені заклади
+					$('.post-4900, .post-5029, .post-4631, .post-4563, .post-4556, .post-5053, .post-4234, .post-4154, .post-4025, .post-5540, .post-5232').addClass("closedForever");
+					jQuery(".closedForever .lf-head-btn:contains('ЗАЧИНЕНО')").text("ЗАКЛАД НЕ ПРАЦЮЄ");
+
+        } );
+    }
+		jQuery(".lf-head-btn:contains('ВІДЧИНЕНО')").addClass('open-status-border');
+		jQuery(".lf-head-btn:contains('ЗАЧИНЕНО')").addClass('closed-status-border');
+		$('.post-4900 .lf-background, .post-5029 .lf-background, .post-4631 .lf-background, .post-4563 .lf-background, .post-4556 .lf-background, .post-5053 .lf-background, .post-4234 .lf-background, .post-4154 .lf-background, .post-4025 .lf-background, .post-5540 .lf-background, .post-5232 .lf-background').css({WebkitFilter: 'grayscale(1) blur(5px)'});
+		$('.post-4900, .post-5029, .post-4631, .post-4563, .post-4556, .post-5053, .post-4234, .post-4154, .post-4025, .post-5540 .post-5232').addClass("closedForever");
+		jQuery(".closedForever .lf-head-btn:contains('ЗАЧИНЕНО')").text("ЗАКЛАД НЕ ПРАЦЮЄ");
+} );
