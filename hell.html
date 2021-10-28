@@ -1,4 +1,5 @@
-asd
-asd
-Huy
-asdasd
+jQuery( $ => {
+    if ( MyListing.Explore && MyListing.Explore.map ) {
+        MyListing.Explore.map.addListener( 'updated_markers', () => {
+					jQuery(".lf-head-btn:contains('ВІДЧИНЕНО')").addClass('open-status-border');
+					jQuery(".lf-head-btn:contains('ЗАЧИНЕНО')").addClass('closed-status-border');
